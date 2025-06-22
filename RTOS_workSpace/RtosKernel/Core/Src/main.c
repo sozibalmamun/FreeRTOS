@@ -22,7 +22,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "FreeRTOS.h"
+#include "task.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -62,6 +63,9 @@ void StartDefaultTask(void *argument);
 
 /* USER CODE BEGIN PFP */
 
+static void task_1_Handler (void* arg);
+static void task_2_Handler (void* arg);
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -79,6 +83,11 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
 
+	TaskHandle_t task_1_handel=NULL;
+	TaskHandle_t task_2_handel=NULL;
+	BaseType_t status;
+
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -95,12 +104,20 @@ int main(void)
 
   /* USER CODE BEGIN SysInit */
 
+
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+  status=xTaskCreate(task_1_Handler, "Task_1", 200, "Hello world from task 1", 2, &task_1_handel);
+  configASSERT(status==pdPASS);//if task creat fail then code will hang here
+
+  status=xTaskCreate(task_2_Handler, "Task_2", 200, "Hello world from task 2", 2, &task_2_handel);
+  configASSERT(status==pdPASS);//if task creat fail then code will hang here
+
+
 
   /* USER CODE END 2 */
 
@@ -271,6 +288,25 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+static void task_1_Handler (void* arg){
+
+	while(1){
+
+
+
+	}
+}
+
+static void task_2_Handler (void* arg){
+
+	while(1){
+
+
+
+	}
+}
+
 
 /* USER CODE END 4 */
 
