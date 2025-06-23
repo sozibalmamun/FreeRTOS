@@ -265,7 +265,6 @@ static void task_1_Handler (void* arg){
 	while(1){
 
 		printf("%s\n",(char*)arg);
-		HAL_GPIO_WritePin(redLed_GPIO_Port, redLed_Pin, 1);
 		taskYIELD();
 
 
@@ -277,7 +276,6 @@ static void task_2_Handler (void* arg){
 	while(1){
 
 		printf("%s\n",(char*)arg);
-		HAL_GPIO_WritePin(blueLed_GPIO_Port, blueLed_Pin, 1);
 		taskYIELD();
 
 

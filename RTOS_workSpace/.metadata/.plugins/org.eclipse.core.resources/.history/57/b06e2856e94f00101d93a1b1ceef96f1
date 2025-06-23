@@ -159,6 +159,10 @@ int main(void)
 	{
     /* USER CODE END WHILE */
 
+	HAL_GPIO_WritePin(redLed_GPIO_Port, redLed_Pin, 1);
+
+
+
     /* USER CODE BEGIN 3 */
 	}
   /* USER CODE END 3 */
