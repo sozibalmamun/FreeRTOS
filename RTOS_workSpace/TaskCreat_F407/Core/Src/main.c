@@ -56,7 +56,6 @@ const osThreadAttr_t defaultTask_attributes = {
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-static void MX_GPIO_Init(void);
 void StartDefaultTask(void *argument);
 
 /* USER CODE BEGIN PFP */
@@ -101,7 +100,6 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
 
 	/* USER CODE BEGIN 2 */
@@ -210,54 +208,6 @@ void SystemClock_Config(void)
   }
 }
 
-/**
-  * @brief GPIO Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_GPIO_Init(void)
-{
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
-  /* USER CODE BEGIN MX_GPIO_Init_1 */
-
-  /* USER CODE END MX_GPIO_Init_1 */
-
-  /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOC_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(redLed_GPIO_Port, redLed_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(blueLed_GPIO_Port, blueLed_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin : switch_Pin */
-  GPIO_InitStruct.Pin = switch_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(switch_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : redLed_Pin */
-  GPIO_InitStruct.Pin = redLed_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(redLed_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : blueLed_Pin */
-  GPIO_InitStruct.Pin = blueLed_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(blueLed_GPIO_Port, &GPIO_InitStruct);
-
-  /* USER CODE BEGIN MX_GPIO_Init_2 */
-
-  /* USER CODE END MX_GPIO_Init_2 */
-}
-
 /* USER CODE BEGIN 4 */
 
 static void task_1_Handler (void* arg){
@@ -265,7 +215,6 @@ static void task_1_Handler (void* arg){
 	while(1){
 
 		printf("%s\n",(char*)arg);
-		HAL_GPIO_WritePin(redLed_GPIO_Port, redLed_Pin, 1);
 		taskYIELD();
 
 
@@ -277,7 +226,6 @@ static void task_2_Handler (void* arg){
 	while(1){
 
 		printf("%s\n",(char*)arg);
-		HAL_GPIO_WritePin(blueLed_GPIO_Port, blueLed_Pin, 1);
 		taskYIELD();
 
 

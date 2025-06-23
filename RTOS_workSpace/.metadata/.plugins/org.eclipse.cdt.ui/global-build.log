@@ -1,35 +1,77 @@
-10:01:08 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
+14:06:24 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
 make -j16 all 
 arm-none-eabi-size  TaskCreat_F407.elf 
    text	   data	    bss	    dec	    hex	filename
-  21912	    108	  20900	  42920	   a7a8	TaskCreat_F407.elf
+  20776	    108	  20900	  41784	   a338	TaskCreat_F407.elf
 Finished building: default.size.stdout
  
-10:01:14 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
+14:06:30 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
 make -j16 all 
 arm-none-eabi-size  TaskCreat_F407.elf 
    text	   data	    bss	    dec	    hex	filename
-  21912	    108	  20900	  42920	   a7a8	TaskCreat_F407.elf
+  20776	    108	  20900	  41784	   a338	TaskCreat_F407.elf
 Finished building: default.size.stdout
  
-10:14:46 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
+14:07:10 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
 make -j16 all 
 arm-none-eabi-size  TaskCreat_F407.elf 
    text	   data	    bss	    dec	    hex	filename
-  21912	    108	  20900	  42920	   a7a8	TaskCreat_F407.elf
+  20776	    108	  20900	  41784	   a338	TaskCreat_F407.elf
 Finished building: default.size.stdout
  
-10:16:33 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
+14:07:41 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "TaskCreat_F407.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\RND\STM\FreeRTOS\RTOS_workSpace\TaskCreat_F407\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TaskCreat_F407.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: TaskCreat_F407.elf
- 
 arm-none-eabi-size  TaskCreat_F407.elf 
-arm-none-eabi-objdump -h -S TaskCreat_F407.elf  > "TaskCreat_F407.list"
    text	   data	    bss	    dec	    hex	filename
-  21928	    108	  20900	  42936	   a7b8	TaskCreat_F407.elf
+  20776	    108	  20900	  41784	   a338	TaskCreat_F407.elf
 Finished building: default.size.stdout
  
-Finished building: TaskCreat_F407.list
+14:10:20 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
+make -j16 all 
+arm-none-eabi-size  TaskCreat_F407.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20776	    108	  20900	  41784	   a338	TaskCreat_F407.elf
+Finished building: default.size.stdout
+ 
+14:15:35 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
+make -j16 all 
+arm-none-eabi-size  TaskCreat_F407.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20776	    108	  20900	  41784	   a338	TaskCreat_F407.elf
+Finished building: default.size.stdout
+ 
+14:35:32 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
+make -j16 all 
+arm-none-eabi-size  TaskCreat_F407.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20776	    108	  20900	  41784	   a338	TaskCreat_F407.elf
+Finished building: default.size.stdout
+ 
+14:41:16 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
+make -j16 all 
+arm-none-eabi-size  TaskCreat_F407.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20776	    108	  20900	  41784	   a338	TaskCreat_F407.elf
+Finished building: default.size.stdout
+ 
+14:41:46 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
+make -j16 all 
+arm-none-eabi-size  TaskCreat_F407.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20776	    108	  20900	  41784	   a338	TaskCreat_F407.elf
+Finished building: default.size.stdout
+ 
+14:59:11 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
+make -j16 all 
+arm-none-eabi-size  TaskCreat_F407.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20776	    108	  20900	  41784	   a338	TaskCreat_F407.elf
+Finished building: default.size.stdout
+ 
+16:15:27 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
+make -j16 all 
+arm-none-eabi-size  TaskCreat_F407.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20776	    108	  20900	  41784	   a338	TaskCreat_F407.elf
+Finished building: default.size.stdout
  
