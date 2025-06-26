@@ -5100,3 +5100,25 @@ java.lang.Exception: localhost:61234: Connection timed out.
 
 !ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-06-23 16:15:35.182
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 1000000 => SWO: 1000000; CPU: 25000000; div: 25
+!SESSION 2025-06-26 09:18:59.922 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  D:\RND\STM\FreeRTOS\RTOS_workSpace\TaskCreat_F407\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\RND\STM\FreeRTOS\RTOS_workSpace\TaskCreat_F407\.project
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-06-26 09:19:01.158
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-26 09:19:04.143
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-26 09:19:04.144
+!MESSAGE Log4j2 initialized with config file D:\RND\STM\FreeRTOS\RTOS_workSpace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-26 09:19:11.298
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-06-26 09:19:15.820
+!MESSAGE Indexed 'TaskCreat_F407' (33 sources, 109 headers) in 4.46 sec: 8,737 declarations; 48,068 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0035%)
