@@ -1051,7 +1051,7 @@ __STATIC_FORCEINLINE void __disable_irq(void)
 	/* USER CODE BEGIN Error_Handler_Debug */
 	/* User can add his own implementation to report the HAL error return state */
 	__disable_irq();
-	while (1)
+ 	while (1)
  80008a0:	bf00      	nop
  80008a2:	e7fd      	b.n	80008a0 <Error_Handler+0x8>
 

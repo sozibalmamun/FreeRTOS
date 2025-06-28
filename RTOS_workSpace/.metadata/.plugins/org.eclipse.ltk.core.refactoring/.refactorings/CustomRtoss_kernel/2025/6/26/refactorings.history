@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CustomRtoss_kernel/ThirdParty/FreeFTOS&apos; to &apos;FreeRTOS&apos;" description="Rename resource &apos;FreeFTOS&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ThirdParty/FreeFTOS" name="FreeRTOS" stamp="1751107349357" updateReferences="true"/>
+</session>

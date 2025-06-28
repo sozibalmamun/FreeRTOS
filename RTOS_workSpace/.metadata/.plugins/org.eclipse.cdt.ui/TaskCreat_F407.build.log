@@ -1,4 +1,4 @@
-12:22:03 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
+11:12:31 **** Incremental Build of configuration Debug for project TaskCreat_F407 ****
 make -j16 all 
 arm-none-eabi-size  TaskCreat_F407.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  TaskCreat_F407.elf
 Finished building: default.size.stdout
  
 
-12:22:03 Build Finished. 0 errors, 0 warnings. (took 270ms)
+11:12:32 Build Finished. 0 errors, 0 warnings. (took 865ms)
 

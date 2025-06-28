@@ -5311,3 +5311,96 @@ java.lang.NullPointerException: Cannot read the array length because "containers
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SESSION 2025-06-28 10:46:53.066 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  D:\RND\STM\FreeRTOS\RTOS_workSpace\TaskCreat_F407\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\RND\STM\FreeRTOS\RTOS_workSpace\TaskCreat_F407\.project
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-06-28 10:46:54.269
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-28 10:46:57.277
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-28 10:46:57.278
+!MESSAGE Log4j2 initialized with config file D:\RND\STM\FreeRTOS\RTOS_workSpace\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-06-28 10:47:01.774
+!MESSAGE Failed to open C/C++ index file D:\RND\STM\FreeRTOS\RTOS_workSpace\.metadata\.plugins\org.eclipse.cdt.core\TaskCreat_F407.1750572009532.pdom - rebuilding the index
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: TaskCreat_F407.1750572009532.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:323)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:303)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:518)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getLinkageID(PDOMLinkage.java:140)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.readLinkages(PDOM.java:479)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.loadDatabase(PDOM.java:460)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.<init>(PDOM.java:435)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.<init>(WritablePDOM.java:67)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.<init>(WritablePDOM.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMManager.getOrCreatePDOM(PDOMManager.java:391)
+	at org.eclipse.cdt.internal.core.pdom.PDOMManager.createIndexer(PDOMManager.java:592)
+	at org.eclipse.cdt.internal.core.pdom.PDOMSetupJob.run(PDOMSetupJob.java:61)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2025-06-28 10:47:01.774
+!MESSAGE Corrupted database: TaskCreat_F407.1750572009532.pdom
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-06-28 10:47:01.775
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: TaskCreat_F407.1750572009532.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:323)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:303)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:518)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getLinkageID(PDOMLinkage.java:140)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.readLinkages(PDOM.java:479)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.loadDatabase(PDOM.java:460)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.<init>(PDOM.java:435)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.<init>(WritablePDOM.java:67)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.<init>(WritablePDOM.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMManager.getOrCreatePDOM(PDOMManager.java:399)
+	at org.eclipse.cdt.internal.core.pdom.PDOMManager.createIndexer(PDOMManager.java:592)
+	at org.eclipse.cdt.internal.core.pdom.PDOMSetupJob.run(PDOMSetupJob.java:61)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2025-06-28 10:47:01.775
+!MESSAGE Corrupted database: TaskCreat_F407.1750572009532.pdom
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-28 10:47:03.597
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-06-28 10:49:32.678
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 1000000 => SWO: 1000000; CPU: 25000000; div: 25
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-06-28 10:50:16.090
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 1000000 => SWO: 1000000; CPU: 25000000; div: 25
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-06-28 11:12:40.005
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 1000000 => SWO: 1000000; CPU: 25000000; div: 25
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-06-28 11:54:28.381
+!MESSAGE Indexed 'CustomRtoss_kernel' (19 sources, 81 headers) in 1.87 sec: 4,423 declarations; 17,851 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
+!SESSION 2025-06-28 15:39:28.869 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  D:\RND\STM\FreeRTOS\RTOS_workSpace\CustomRtoss_kernel\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\RND\STM\FreeRTOS\RTOS_workSpace\CustomRtoss_kernel\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-28 15:39:33.278
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-28 15:39:33.279
+!MESSAGE Log4j2 initialized with config file D:\RND\STM\FreeRTOS\RTOS_workSpace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-28 15:39:40.421
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-06-28 15:39:42.892
+!MESSAGE Indexed 'CustomRtoss_kernel' (19 sources, 115 headers) in 2.32 sec: 10,341 declarations; 35,927 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.52%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-06-28 16:43:27.973
+!MESSAGE Indexed 'CustomRtoss_kernel' (27 sources, 138 headers) in 1.28 sec: 12,804 declarations; 45,928 references; 1 unresolved inclusions; 200 syntax errors; 239 unresolved names (0.41%)
