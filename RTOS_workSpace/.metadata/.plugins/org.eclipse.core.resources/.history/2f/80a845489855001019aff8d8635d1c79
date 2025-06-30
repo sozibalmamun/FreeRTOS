@@ -172,15 +172,16 @@ void SystemClock_Config(void)
 static void task_1_Handler (void* arg){
 
 
-	char msg[100];
+	//	char msg[100];
 
 	while(1){
 
-//				printf("%s\n",(char*)arg);
+		printf("%s\n",(char*)arg);
 
-		sniprintf(msg,100,"%s\n",(char*)arg);
-		SEGGER_SYSVIEW_PrintfTarget(msg);
-		taskYIELD();
+		//		sniprintf(msg,100,"%s\n",(char*)arg);
+		//		SEGGER_SYSVIEW_PrintfTarget(msg);
+		//
+		//		taskYIELD();
 
 
 	}
@@ -188,15 +189,16 @@ static void task_1_Handler (void* arg){
 
 static void task_2_Handler (void* arg){
 
-	char msg[100];
+	//	char msg[100];
 
 	while(1){
 
-//		printf("%s\n",(char*)arg);
+		printf("%s\n",(char*)arg);
 
-		sniprintf(msg,100,"%s\n",(char*)arg);
-		SEGGER_SYSVIEW_PrintfTarget(msg);
-		taskYIELD();
+		//		sniprintf(msg,100,"%s\n",(char*)arg);
+		//		SEGGER_SYSVIEW_PrintfTarget(msg);
+
+		//		taskYIELD();
 	}
 
 }

@@ -1,10 +1,10 @@
-15:47:31 **** Incremental Build of configuration Debug for project CustomRtoss_kernel ****
+16:18:53 **** Incremental Build of configuration Debug for project CustomRtoss_kernel ****
 make -j16 all 
 arm-none-eabi-size  CustomRtoss_kernel.elf 
    text	   data	    bss	    dec	    hex	filename
-  27660	    108	  84956	 112724	  1b854	CustomRtoss_kernel.elf
+  28824	     96	  84952	 113872	  1bcd0	CustomRtoss_kernel.elf
 Finished building: default.size.stdout
  
 
-15:47:32 Build Finished. 0 errors, 0 warnings. (took 202ms)
+16:18:53 Build Finished. 0 errors, 0 warnings. (took 191ms)
 
